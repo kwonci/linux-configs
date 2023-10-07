@@ -1,0 +1,5 @@
+[user]
+	email = changyoung.kwon.0729@gmail.com
+	name = Changyoung Kwon
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
