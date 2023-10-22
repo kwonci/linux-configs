@@ -3,3 +3,7 @@
 	name = Changyoung Kwon
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lga = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  cfg-cmp = "!f() { git config user.name \"Changyoung Kwon\" && git config user.email \"kwon.changyoung@airsmed.com\"; }; f"
+[init]
+	defaultBranch = master
