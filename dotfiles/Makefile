@@ -9,3 +9,7 @@ example-adopt:  # copy existing package to dotfiles, then create symlink
 .PHONY: nvim
 nvim:
 	stow -t ~/.config/nvim nvim
+
+.PHONY: code
+code:
+	stow -t ~/.config/code code

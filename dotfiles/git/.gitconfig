@@ -5,5 +5,11 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	lga = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   cfg-cmp = "!f() { git config user.name \"Changyoung Kwon\" && git config user.email \"kwon.changyoung@airsmed.com\"; }; f"
+
+[core]
+pager = npx git-split-diffs --color | less -RFX
+
 [init]
-	defaultBranch = master
+	defaultBranch = main
+[split-diffs]
+	min-line-width = 0

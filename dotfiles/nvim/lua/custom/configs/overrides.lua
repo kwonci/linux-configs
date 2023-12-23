@@ -57,6 +57,10 @@ M.nvimtree = {
       },
     },
   },
+
+  filters = {
+    git_ignored = false,
+  }
 }
 
 M.copilot = {
