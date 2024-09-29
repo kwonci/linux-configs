@@ -17,3 +17,7 @@ oh-my-zsh:
 .PHONY: tmux
 tmux:
 	stow -t ~ tmux
+	# then install tmux plugins(links: https://github.com/tmux-plugins/tpm)
+	# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+	# tmux source ~/.tmux.conf
+	# # then press `prefix + I` to install plugins
