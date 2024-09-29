@@ -75,6 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
+#
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(zsh-syntax-highlighting zsh-autosuggestions zsh-completions vi-mode common-aliases)
@@ -85,7 +86,7 @@ plugins+=(docker docker-compose kubectl helm)
 plugins+=(asdf)
 plugins+=(npm yarn rust)
 plugins+=(ruby gem)
-plugins+=(pip pipenv)
+plugins+=(pip pipenv poetry)
 plugins+=(aws)
 
 source $ZSH/oh-my-zsh.sh
@@ -118,3 +119,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f "/home/changyoung/.ghcup/env" ] && source "/home/changyoung/.ghcup/env" # ghcup-env
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/changyoung/.asdf/installs/terraform/1.7.3/bin/terraform terraform
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
