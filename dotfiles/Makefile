@@ -27,8 +27,15 @@ tmux:
 	# # then press `prefix + I` to install plugins
 
 .PHONY: polybar
-polybar:
+polybar: polybar-deps
 	@stow -t ~ polybar
+
+.PHONY: polybar-deps
+polybar-deps:
+	# xrandr
+	yay -S xorg-xrandr
+	# bluetoothctl
+	yay -S bluez-utils
 
 .PHONY: git
 git: 
