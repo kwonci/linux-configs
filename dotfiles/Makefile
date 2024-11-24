@@ -29,3 +29,7 @@ tmux:
 .PHONY: config
 config:
 	@stow -t ~ config
+
+.PHONY: git
+git: 
+	stow -t ~ git
