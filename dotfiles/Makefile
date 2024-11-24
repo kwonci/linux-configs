@@ -37,3 +37,7 @@ git:
 .PHONY: vim
 vim:
 	stow -t ~ vim
+
+.PHONY: asdf
+asdf:
+	stow -t ~ asdf
