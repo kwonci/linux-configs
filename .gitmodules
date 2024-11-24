@@ -1,3 +1,15 @@
-[submodule "dotfiles/dotfiles/zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-	path = dotfiles/dotfiles/zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+[submodule "zsh-autosuggestions"]
+	path = dotfiles/zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+
+[submodule "zsh-syntax-highlighting"]
+	path = dotfiles/zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+[submodule "zsh-completions"]
+	path = dotfiles/zsh/.oh-my-zsh/custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+
+[submodule "p10k"]
+	path = dotfiles/zsh/.oh-my-zsh/custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
