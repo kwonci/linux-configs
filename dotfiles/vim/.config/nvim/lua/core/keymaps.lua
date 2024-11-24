@@ -1,8 +1,8 @@
 local map = vim.keymap.set
 
--- Set ',' as my leader key
-vim.g.mapleader = ','
-vim.g.maplocalleader = ','
+-- Set '\'' as my leader key
+vim.g.mapleader = '\''
+vim.g.maplocalleader = '\''
 
 -- Resize splits with arrow keys
 map('n', '<A-h>', '<cmd>vertical resize -2<CR>', { desc = 'Decrease window width' })
