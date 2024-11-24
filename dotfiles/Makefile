@@ -26,9 +26,9 @@ tmux:
 	# tmux source ~/.tmux.conf
 	# # then press `prefix + I` to install plugins
 
-.PHONY: config
-config:
-	@stow -t ~ config
+.PHONY: polybar
+polybar:
+	@stow -t ~ polybar
 
 .PHONY: git
 git: 
