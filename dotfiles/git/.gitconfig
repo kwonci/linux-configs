@@ -12,6 +12,7 @@
   pager = npx git-split-diffs --color | less -RFX
   packedGitLimit = 512m 
   packedGitWindowSize = 512m 
+	editor = nvim
 
 [pack] 
   deltaCacheSize = 2047m 
