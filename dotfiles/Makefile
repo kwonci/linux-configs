@@ -33,3 +33,7 @@ polybar:
 .PHONY: git
 git: 
 	stow -t ~ git
+
+.PHONY: vim
+vim:
+	stow -t ~ vim
