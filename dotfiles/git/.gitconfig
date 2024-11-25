@@ -27,3 +27,6 @@
 	helper = store
 [pull]
 	rebase = true
+
+[includeIf "gitdir:~/workspace/airsmedical/"]
+  path = .gitconfig_airsmedical
