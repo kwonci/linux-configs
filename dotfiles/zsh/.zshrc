@@ -124,4 +124,3 @@ source $ZSH/oh-my-zsh.sh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/changyoung/.asdf/installs/terraform/1.7.3/bin/terraform terraform
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
