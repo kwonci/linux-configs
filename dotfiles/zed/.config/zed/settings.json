@@ -24,5 +24,12 @@
   },
   "vim": {
     "use_smartcase_find": false
+  },
+  "languages": {
+    "YAML": {
+      "prettier": {
+        "allowed": true
+      }
+    }
   }
 }
