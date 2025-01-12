@@ -38,7 +38,7 @@ polybar-deps:
 	yay -S bluez-utils
 
 .PHONY: git
-git: 
+git:
 	stow -t ~ git
 
 .PHONY: vim
@@ -48,3 +48,36 @@ vim:
 .PHONY: asdf
 asdf:
 	stow -t ~ asdf
+
+# Download secrets from 1password
+.PHONY: secrets-download
+secrets-download:
+	op document get awsconfig \
+		--vault AIRSMedical > ~/.aws/config
+	op document get awscredentials \
+		--vault AIRSMedical > ~/.aws/credentials
+	op document get kubeconfig \
+		--vault AIRSMedical > ~/.kube/config
+	op document get env.zsh \
+		--vault Personal > ~/.oh-my-zsh/custom/env.zsh
+
+.PHONY: secrets-write
+secrets-write:
+	op document edit awsconfig ~/.aws/config --vault AIRSMedical
+	op document edit awscredentials ~/.aws/credentials --vault AIRSMedical
+	op document edit kubeconfig ~/.kube/config --vault AIRSMedical
+	op document edit env.zsh ~/.oh-my-zsh/custom/env.zsh --vault Personal
+
+.PHONY: secrets-upload
+secrets-upload:
+	op document create ~/.aws/config \
+		--vault AIRSMedical \
+		--title "awsconfig"
+	op document create ~/.aws/credentials \
+		--vault AIRSMedical \
+		--title "awscredentials"
+	op document create ~/.kube/config \
+		--vault AIRSMedical \
+		--title "kubeconfig"
+	op document create ~/.oh-my-zsh/custom/env.zsh \
+		--vault Personal
