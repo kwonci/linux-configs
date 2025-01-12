@@ -13,6 +13,7 @@
   packedGitLimit = 512m 
   packedGitWindowSize = 512m 
 	editor = nvim
+	quotepath = False
 
 [pack] 
   deltaCacheSize = 2047m 
