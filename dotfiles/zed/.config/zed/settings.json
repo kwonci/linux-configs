@@ -28,11 +28,21 @@
   "vim": {
     "use_smartcase_find": false
   },
+  "lsp": {
+    "terraform-ls": {
+      "initialization_options": {
+        "experimentalFeatures": {
+          "prefillRequiredFields": true
+        }
+      }
+    }
+  },
   "languages": {
     "YAML": {
       "prettier": {
         "allowed": true
       }
-    }
+    },
+    "Terraform": {}
   }
 }

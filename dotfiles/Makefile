@@ -67,6 +67,7 @@ secrets-write:
 	op document edit awscredentials ~/.aws/credentials --vault AIRSMedical
 	op document edit kubeconfig ~/.kube/config --vault AIRSMedical
 	op document edit env.zsh ~/.oh-my-zsh/custom/env.zsh --vault Personal
+	op document edit sshconfig ~/.ssh/config --vault Personal	
 
 .PHONY: secrets-upload
 secrets-upload:
@@ -81,3 +82,6 @@ secrets-upload:
 		--title "kubeconfig"
 	op document create ~/.oh-my-zsh/custom/env.zsh \
 		--vault Personal
+	op document create ~/.ssh/config \
+		--vault AIRSMedical \
+		--title "sshconfig"
