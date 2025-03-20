@@ -122,5 +122,10 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f "/home/changyoung/.ghcup/env" ] && source "/home/changyoung/.ghcup/env" # ghcup-env
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /home/changyoung/.asdf/installs/terraform/1.7.3/bin/terraform terraform
+# complete -o nospace -C /home/changyoung/.asdf/installs/terraform/1.7.3/bin/terraform terraform
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+complete -o nospace -C /usr/bin/vault vault
+eval $(thefuck --alias)
+
+. "$HOME/.local/share/../bin/env"

@@ -60,6 +60,8 @@ secrets-download:
 		--vault AIRSMedical > ~/.kube/config
 	op document get env.zsh \
 		--vault Personal > ~/.oh-my-zsh/custom/env.zsh
+	op document get sshconfig \
+		--vault AIRSMedical > ~/.ssh/config
 
 .PHONY: secrets-write
 secrets-write:
